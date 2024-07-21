@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Biblioteca</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#explore">Explore</a></li>
+                <li><a href="#">Bliblioteca</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="now-playing">
+            <h2>Now Playing</h2>
+            <div class="player">
+                <img id="album-art" src="https://via.placeholder.com/150" alt="Album Art">
+                <div class="song-details">
+                    <h3 id="song-title">Song Title</h3>
+                    <p id="artist-name">Artist Name</p>
+                </div>
+                <audio controls id="audio-player">
+                    <source src="" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </section>
+        <section class="library-playlist">
+            <h2>My Playlist</h2>
+            <ul id="library-playlist"></ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <script>
+        // Preenche a playlist da library
+        document.addEventListener('DOMContentLoaded', () => {
+            populateLibraryPlaylist();
+        });
+
+        function populateLibraryPlaylist() {
+            const libraryPlaylist = document.getElementById('library-playlist');
+            libraryPlaylist.innerHTML = '';
+
+            Object.keys(songs).forEach(genre => {
+                songs[genre].forEach(song => {
+                    const li = document.createElement('li');
+                    li.textContent = `${song.title} - ${song.artist} (${genre})`;
+                    li.onclick = () => playSong(song.file, song.title, song.artist, song.cover);
+                    libraryPlaylist.appendChild(li);
+                });
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore - Car Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .explore-section {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+        .explore-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .explore-section ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .explore-section ul li {
+            margin: 10px;
+            text-align: center;
+        }
+        .explore-section ul li img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .explore-section ul li audio {
+            width: 150px;
+            margin-bottom: 10px;
+        }
+        .explore-section ul li button {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        .explore-section ul li button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore Music</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="library.html">Library</a></li>
+                <li><a href="registre.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="explore-section">
+        <h2>Explore</h2>
+        <ul>
+            <li>
+                <img src="images/pop.jpg" alt="Pop Music">
+                <audio controls>
+                    <source src="songs/pop.mp3" type="audio/mp3">
+                </audio>
+                <button onclick="showLyrics('pop')">Show Lyrics</button>
+            </li>
+            <li>
+                <img src="images/rock.jpg" alt="Rock Music">
+                <audio controls>
+                    <source src="songs/rock.mp3" type="audio/mp3">
+                </audio>
+                <button onclick="showLyrics('rock')">Show Lyrics</button>
+            </li>
+            <li>
+                <img src="images/jazz.jpg" alt="Jazz Music">
+                <audio controls>
+                    <source src="songs/jazz.mp3" type="audio/mp3">
+                </audio>
+                <button onclick="showLyrics('jazz')">Show Lyrics</button>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; João Lucas, Criador</p>
+    </footer>
+
+    <script>
+        function showLyrics(genre) {
+            alert('Displaying lyrics for ' + genre + ' music.');
+        }
+    </script>
+</body>
+</html>

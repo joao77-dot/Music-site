@@ -1,0 +1,441 @@
+/* styles.css */
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Seções */
+main {
+    padding: 20px;
+}
+
+/* Seção de Busca */
+.search-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.search-section h2 {
+    margin-bottom: 10px;
+}
+
+.search-section input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 60%;
+    max-width: 400px;
+    margin-right: 10px;
+}
+
+.search-section button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-section button:hover {
+    background-color: #0056b3;
+}
+
+/* Preferências */
+.preferences {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.preferences h2 {
+    margin-bottom: 10px;
+}
+
+.preferences form {
+    display: inline-block;
+}
+
+.preferences select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.preferences button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.preferences button:hover {
+    background-color: #0056b3;
+}
+
+/* Player */
+.now-playing {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.now-playing img {
+    border-radius: 8px;
+}
+
+/* Playlist */
+.playlist {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.playlist h2 {
+    margin-bottom: 10px;
+}
+
+.playlist ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Seção de Explore */
+#explore {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#explore h2 {
+    margin-bottom: 10px;
+}
+
+#explore-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#explore-list li {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 150px;
+}
+
+#explore-list li img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+/* Seção de Playlists Personalizadas */
+.user-playlists {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.user-playlists h2 {
+    margin-bottom: 10px;
+}
+
+.user-playlists form {
+    margin-bottom: 20px;
+}
+
+.user-playlists input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.user-playlists button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.user-playlists button:hover {
+    background-color: #0056b3;
+}
+
+.user-playlists ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-playlists li {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Seção para Adicionar Músicas às Playlists */
+.add-to-playlist {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.add-to-playlist h2 {
+    margin-bottom: 10px;
+}
+
+.add-to-playlist form {
+    margin-bottom: 20px;
+}
+
+.add-to-playlist select,
+.add-to-playlist input,
+.add-to-playlist button {
+    margin-bottom: 10px;
+}
+
+.add-to-playlist select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.add-to-playlist input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.add-to-playlist button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-playlist button:hover {
+    background-color: #0056b3;
+}
+
+/* Modo Escuro */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode header {
+    background-color: #1f1f1f;
+}
+
+.dark-mode .player {
+    background-color: #1f1f1f;
+}
+
+.dark-mode .user-playlists form {
+    background-color: #1f1f1f;
+}
+
+.dark-mode .user-playlists li {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .add-to-playlist form {
+    background-color: #1f1f1f;
+}
+
+.dark-mode .add-to-playlist select,
+.dark-mode .add-to-playlist input {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+/* Botão de Modo Escuro */
+#dark-mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#dark-mode-toggle:hover {
+    background-color: #0056b3;
+}
+
+/* Rodapé */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Modo Escuro - Rodapé */
+.dark-mode footer {
+    background-color: #1f1f1f;
+}
+/* styles.css */
+
+/* Adicionar estilo para a seção de formulários */
+.form-section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-section label {
+    margin: 10px 0 5px;
+}
+
+.form-section input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-section button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.form-section button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para a seção de perfil */
+.profile-section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.profile-section h2 {
+    margin-bottom: 10px;
+}
+
+.profile-section p {
+    margin-bottom: 20px;
+}
+
+.profile-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-section label {
+    margin: 10px 0 5px;
+}
+
+.profile-section input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.profile-section button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.profile-section button:hover {
+    background-color: #0056b3;
+}
